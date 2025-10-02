@@ -220,7 +220,7 @@ export default function Combo() {
     if (idx > -1) {
       cart[idx].qty += 1;
     } else {
-      cart.push({ ...item, qty: 1 });
+      cart.push({ ...item, qty: 1, image: item.images[0] });
     }
     localStorage.setItem("cart", JSON.stringify(cart));
 

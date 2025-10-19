@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
       <div className="container">
         <Link className="navbar-brand fw-bold" to="/home">
-          🍴 Foodies Restaurant
+          🍴 The Golden Bite
         </Link>
 
         <button

@@ -12,7 +12,7 @@ export default function Home() {
       }}
     >
       <div className="container text-center py-5">
-        <h1 className="fw-bold display-4 mb-3">🍴 Welcome to Foodies Restaurant</h1>
+        <h1 className="fw-bold display-4 mb-3">🍴 Welcome to The Golden Bite Restaurant</h1>
         <p className="lead mb-4">
           Delicious Veg, Non-Veg, Desserts, Juices & Combo offers.  
           Order online and get it delivered via <span className="fw-bold">Swiggy</span> or <span className="fw-bold">Zomato</span>.

@@ -1,0 +1,122 @@
+{
+  "ju1": {
+    "id": "ju1",
+    "name": "Fresh Orange Juice",
+    "price": 80,
+    "desc": "Freshly squeezed oranges full of Vitamin C.",
+    "img": "https://static.vecteezy.com/system/resources/previews/030/273/762/large_2x/the-benefits-of-drinking-orange-juice-ai-generated-free-photo.jpg",
+    "likes": 0
+  },
+  "ju2": {
+    "id": "ju2",
+    "name": "Watermelon Juice",
+    "price": 70,
+    "desc": "Cool and refreshing watermelon juice.",
+    "img": "https://img.freepik.com/premium-photo/cup-watermelon-juice-with-splash-black-reflective-studio-background_762785-122009.jpg",
+    "likes": 0
+  },
+  "ju3": {
+    "id": "ju3",
+    "name": "Mango Shake",
+    "price": 100,
+    "desc": "Seasonal mango shake with ice cream.",
+    "img": "https://img.freepik.com/premium-photo/mango-smoothie-dark-background_582637-7662.jpg",
+    "likes": 0
+  },
+  "ju4": {
+    "id": "ju4",
+    "name": "Pineapple Juice",
+    "price": 90,
+    "desc": "Tangy pineapple juice with a tropical punch.",
+    "img": "https://img.freepik.com/premium-photo/glass-pineapple-juice-with-fresh-background_564992-531.jpg",
+    "likes": 0
+  },
+  "ju5": {
+    "id": "ju5",
+    "name": "Apple Juice",
+    "price": 85,
+    "desc": "Sweet and crisp apple juice.",
+    "img": "https://static.vecteezy.com/system/resources/previews/030/623/981/non_2x/apple-juice-image-hd-free-photo.jpg",
+    "likes": 0
+  },
+  "ju6": {
+    "id": "ju6",
+    "name": "Lemon Mint Cooler",
+    "price": 75,
+    "desc": "Fresh lime juice with mint and soda.",
+    "img": "https://image.freepik.com/free-photo/refreshing-mojito-with-lime-mint-ice-glas_275899-968.jpg",
+    "likes": 0
+  },
+  "ju7": {
+    "id": "ju7",
+    "name": "Strawberry Shake",
+    "price": 110,
+    "desc": "Creamy shake with fresh strawberries.",
+    "img": "https://img.freepik.com/premium-photo/glass-strawberry-smoothie-bowl-strawberries_865967-141226.jpg",
+    "likes": 0
+  },
+  "ju8": {
+    "id": "ju8",
+    "name": "Grape Juice",
+    "price": 95,
+    "desc": "Juicy grapes blended into a refreshing drink.",
+    "img": "https://img.freepik.com/premium-photo/grape-juice-clear-glass_1234738-201630.jpg",
+    "likes": 0
+  },
+  "ju9": {
+    "id": "ju9",
+    "name": "Coconut Water",
+    "price": 60,
+    "desc": "Natural tender coconut water.",
+    "img": "https://img.freepik.com/premium-photo/coconut-water-fresh-cocktail-natural-coconut_786587-404.jpg",
+    "likes": 0
+  },
+  "ju10": {
+    "id": "ju10",
+    "name": "Kiwi Juice",
+    "price": 120,
+    "desc": "Exotic kiwi juice packed with antioxidants.",
+    "img": "https://weirdsmoothies.com/wp-content/uploads/2024/01/image-212-1024x702.jpeg",
+    "likes": 0
+  },
+  "ju11": {
+    "id": "ju11",
+    "name": "Pomegranate Juice",
+    "price": 130,
+    "desc": "Rich in iron and vitamins.",
+    "img": "https://img.freepik.com/premium-photo/pomegranate-juice_98908-2329.jpg",
+    "likes": 0
+  },
+  "ju12": {
+    "id": "ju12",
+    "name": "Cold Coffee",
+    "price": 100,
+    "desc": "Chilled coffee blended with milk & ice.",
+    "img": "https://coffeemodern.com/wp-content/uploads/2021/12/F1-2.jpg",
+    "likes": 0
+  },
+  "ju13": {
+    "id": "ju13",
+    "name": "Banana Shake",
+    "price": 90,
+    "desc": "Energy-packed banana milkshake.",
+    "img": "https://i.ytimg.com/vi/BDoW40Basfs/maxresdefault.jpg",
+    "likes": 0
+  },
+  "ju14": {
+    "id": "ju14",
+    "name": "Mixed Fruit Juice",
+    "price": 140,
+    "desc": "Blend of seasonal fruits in one glass.",
+    "img": "https://img.freepik.com/premium-photo/mixed-berry-smoothie-with-spinach-photo-realistic-still-life-photo-overhead-shot-ai-generated_29654-4052.jpg",
+    "likes": 0
+  },
+  "ju15": {
+    "id": "ju15",
+    "name": "Tender Lime Soda",
+    "price": 60,
+    "desc": "Refreshing lime soda with salt/sugar.",
+    "img": "https://tse1.mm.bing.net/th/id/OIP.lSEAqHZATOmHSPyS7h0NeAHaE7?r=0&w=626&h=417&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "likes": 0
+  }
+}

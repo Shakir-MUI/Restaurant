@@ -1,0 +1,135 @@
+{
+    "des1": {
+      "id": "des1",
+      "name": "Chocolate Brownie",
+      "price": 120,
+      "description": "Rich, fudgy brownie with a dark chocolate base.",
+      "image": "https://tse3.mm.bing.net/th/id/OIP.cA1m1gjR3AQ4JxbsyFwuUwHaE7?r=0&w=626&h=417&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "likes": 0
+    },
+    
+    "des2": {
+      "id": "des2",
+      "name": "Vanilla Ice Cream",
+      "price": 90,
+      "description": "Classic creamy vanilla delight.",
+      "image": "https://th.bing.com/th/id/R.a292c98c23776a2a09a7ca6ebfa75e76?rik=SOQ345dwv0okHg&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-18%2fVanilla-Ice-Cream-Wallpaper-HD-46971.jpg&ehk=VP6577j6suKHgUjMfCQbLCgkJNeBVXneq91i5ChFEBQ%3d&risl=&pid=ImgRaw&r=0",
+      "likes": 0
+    },
+    
+    "des3": {
+      "id": "des3",
+      "name": "Strawberry Cheesecake",
+      "price": 150,
+      "description": "Creamy cheesecake topped with fresh strawberries.",
+      "image": "https://i.pinimg.com/originals/69/51/8b/69518b319eece273857ba83595b9f56b.jpg",
+      "likes": 0
+    },
+    
+    "des4": {
+      "id": "des4",
+      "name": "Gulab Jamun",
+      "price": 100,
+      "description": "Soft milk-solid balls soaked in sugar syrup.",
+      "image": "https://img.freepik.com/premium-photo/tasty-gulab-jamuns-white-background_787273-3418.jpg",
+      "likes": 0
+    },
+    "des5": {
+      "id": "des5",
+      "name": "Rasmalai",
+      "price": 130,
+      "description": "Spongy rasgullas in rich saffron milk.",
+      "image": "https://th.bing.com/th/id/R.f5f842cb91597146df97a40f962fa699?rik=Ovkff7B2O5HSTA&riu=http%3a%2f%2fwww.rachnas-kitchen.com%2fwp-content%2fuploads%2f2016%2f02%2fimage-4.jpeg&ehk=RrNlaewVhN38uYqx70k0WkNrcx3RyP%2fJzrFRJ76PQP8%3d&risl=&pid=ImgRaw&r=0",
+      "likes": 0
+    },
+    
+    "des6": {
+      "id": "des6",
+      "name": "Chocolate Lava Cake",
+      "price": 160,
+      "description": "Molten chocolate cake with gooey center.",
+      "image": "https://img.freepik.com/premium-photo/rich-chocolate-lava-cake-with-molten-center_1169880-61905.jpg",
+      "likes": 0
+    },
+    
+    "des7": {
+      "id": "des7",
+      "name": "Fruit Salad with Ice Cream",
+      "price": 110,
+      "description": "Seasonal fruits topped with vanilla scoop.",
+      "image": "https://img.freepik.com/premium-photo/delicious-fruit-salad-glass-with-ice-cream_841543-18533.jpg",
+      "likes": 0
+    },
+    
+    "des8": {
+      "id": "des8",
+      "name": "Kesar Kulfi",
+      "price": 90,
+      "description": "Traditional Indian saffron-flavored kulfi.",
+      "image": "https://cdn.mygingergarlickitchen.com/images/800px/800px-how-to-make-mango-kulfi-recipe-video-anupama-paliwal-my-ginger-garlic-kitchen-12.jpg",
+      "likes": 0
+    },
+    
+    "des9": {
+      "id": "des9",
+      "name": "Apple Pie",
+      "price": 140,
+      "description": "Crispy pie crust filled with apple and cinnamon.",
+      "image": "https://cdn.pixabay.com/photo/2022/10/13/21/12/apple-pie-7519981_1280.jpg",
+      "likes": 0
+    },
+    
+    "des10": {
+      "id": "des10",
+      "name": "Carrot Halwa",
+      "price": 100,
+      "description": "Traditional gajar ka halwa with nuts.",
+      "image": "https://www.ruchikrandhap.com/wp-content/uploads/2010/03/Gajar-Ka-Halwa_1.jpg",
+      "likes": 0
+    },
+    
+    "des11": {
+      "id": "des11",
+      "name": "Tiramisu",
+      "price": 180,
+      "description": "Coffee-flavored Italian dessert.",
+      "image": "https://static.vecteezy.com/system/resources/previews/033/790/663/non_2x/a-slice-of-tiramisu-on-a-plate-with-coffee-and-nuts-ai-generated-photo.jpg",
+      "likes": 0
+    },
+    
+    "des12": {
+      "id": "des12",
+      "name": "Panna Cotta",
+      "price": 170,
+      "description": "Italian creamy dessert with fruit topping.",
+      "image": "https://i.pinimg.com/originals/8e/95/5d/8e955dfd648d8bd9e68a782cca3fee67.jpg",
+      "likes": 0
+    },
+    
+    "des13": {
+      "id": "des13",
+      "name": "Donut",
+      "price": 80,
+      "description": "Soft and fluffy donut with glaze.",
+      "image": "https://cdn.pixabay.com/photo/2023/04/15/11/58/donuts-7927510_1280.jpg",
+      "likes": 0
+    },
+    
+    "des14": {
+      "id": "des14",
+      "name": "Mango Mousse",
+      "price": 140,
+      "description": "Light and fluffy mousse made with fresh mango.",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/029/857/205/small_2x/of-mango-mousse-as-a-dish-in-a-high-end-restaurant-generative-ai-photo.jpg",
+      "likes": 0
+    },
+    
+    "des15": {
+      "id": "des15",
+      "name": "Black Forest Cake",
+      "price": 160,
+      "description": "Chocolate sponge layered with cream and cherries.",
+      "image": "https://img.freepik.com/premium-photo/chocolate-cake-with-cherry-generative-ai-content_959800-1547.jpg",
+      "likes": 0
+    }
+}

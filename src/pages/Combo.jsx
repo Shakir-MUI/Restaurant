@@ -182,29 +182,29 @@ export default function Combo() {
   const [toast, setToast] = useState("");
   const navigate = useNavigate();
 
-  // Load items and likes from localStorage
+  // ✅ Fetch Combo items with Firebase likes
   useEffect(() => {
     let alive = true;
     (async () => {
       try {
         const { data } = await axios.get(`${BASE_URL}/menu/combo.json`);
         if (!alive) return;
-        let arr = data ? (Array.isArray(data) ? data : Object.values(data)) : fallbackComboItems;
-        // Load likes from localStorage
-        const savedLikes = JSON.parse(localStorage.getItem("ComboLikes") || "{}");
-        arr = arr.map(item => ({
-          ...item,
-          likes: savedLikes[item.id] || 0,
-        }));
+
+        let arr = [];
+        if (data) {
+          arr = Object.entries(data).map(([id, item]) => ({
+            id,
+            ...item,
+            likes: item.likes || 0,
+          }));
+        } else {
+          arr = fallbackComboItems.map((item) => ({ ...item, likes: 0 }));
+        }
+
         setItems(arr);
       } catch (e) {
         console.error("Combo fetch error:", e);
-        const savedLikes = JSON.parse(localStorage.getItem("ComboLikes") || "{}");
-        const arr = fallbackComboItems.map(item => ({
-          ...item,
-          likes: savedLikes[item.id] || 0,
-        }));
-        setItems(arr);
+        setItems(fallbackComboItems.map((item) => ({ ...item, likes: 0 })));
       } finally {
         if (alive) setLoading(false);
       }
@@ -214,6 +214,7 @@ export default function Combo() {
     };
   }, []);
 
+  // Add to Cart
   const addToCart = (item) => {
     const cart = JSON.parse(localStorage.getItem("cart") || "[]");
     const idx = cart.findIndex((c) => c.id === item.id);
@@ -228,21 +229,24 @@ export default function Combo() {
     setTimeout(() => setToast(""), 2500);
   };
 
-  // ✅ Handle likes
-  const handleLike = (itemId) => {
-    const updatedItems = items.map(item => {
+  // ✅ Handle likes (update both UI + Firebase)
+  const handleLike = async (itemId) => {
+    const updatedItems = items.map((item) => {
       if (item.id === itemId) {
-        const newLikes = item.likes + 1;
-        return { ...item, likes: newLikes };
+        return { ...item, likes: (item.likes || 0) + 1 };
       }
       return item;
     });
     setItems(updatedItems);
 
-    // Save likes in localStorage
-    const savedLikes = JSON.parse(localStorage.getItem("ComboLikes") || "{}");
-    savedLikes[itemId] = (savedLikes[itemId] || 0) + 1;
-    localStorage.setItem("ComboLikes", JSON.stringify(savedLikes));
+    try {
+      const likedItem = updatedItems.find((item) => item.id === itemId);
+      await axios.patch(`${BASE_URL}/menu/combo/${itemId}.json`, {
+        likes: likedItem.likes,
+      });
+    } catch (err) {
+      console.error("Failed to update likes:", err);
+    }
   };
 
   if (loading) {

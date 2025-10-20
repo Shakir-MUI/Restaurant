@@ -21,4 +21,13 @@ const app = initializeApp(firebaseConfig);
 export const FIREBASE_DB_URL = firebaseConfig.databaseURL;
 
 
+// Firebase Realtime Database Rules to allow read and write access to "reviews" node{
+//   "rules": {
+//     "reviews": {
+//       ".read": true,
+//       ".write": true
+//     }
+//   }
+// }
+
 export default app;

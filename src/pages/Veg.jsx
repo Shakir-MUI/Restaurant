@@ -14,6 +14,7 @@ const fallbackVegItems = [
     price: 199,
     desc: "Cottage cheese in creamy tomato gravy",
     img: "https://tse1.mm.bing.net/th/id/OIP.fgEb3K-H9k8ovUMpQhnQxgHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    likes: 0
   },
   {
     id: "veg2",
@@ -21,6 +22,7 @@ const fallbackVegItems = [
     price: 179,
     desc: "Aromatic basmati rice with mixed veggies",
     img: "https://media.istockphoto.com/id/1363306860/photo/veg-biryani.jpg?s=612x612&w=0&k=20&c=HCRg_H6VqfL07tF7RYDXedJrjQyqQsUtGiaSF_4L8Yw=",
+    likes: 0
   },
   {
     id: "veg3",
@@ -28,6 +30,7 @@ const fallbackVegItems = [
     price: 159,
     desc: "Spiced chickpeas with fried bread",
     img: "https://i.cdn.newsbytesapp.com/images/l24220240122105227.jpeg",
+    likes: 0  
   },
   {
     id: "veg4",
@@ -35,6 +38,7 @@ const fallbackVegItems = [
     price: 129,
     desc: "Crispy dosa stuffed with spiced potato",
     img: "https://images.news18.com/ibnkhabar/uploads/2021/08/masala-dosa-recipe.jpg",
+    likes: 0
   },
   {
     id: "veg5",
@@ -42,6 +46,7 @@ const fallbackVegItems = [
     price: 149,
     desc: "Indo-Chinese style fried rice",
     img: "https://i.pinimg.com/originals/2b/ac/ff/2bacffe492fef24edf51eb403bbfeff7.jpg",
+    likes: 0
   },
   {
     id: "veg6",
@@ -49,6 +54,7 @@ const fallbackVegItems = [
     price: 99,
     desc: "Stuffed flatbread with spiced potato",
     img: "https://t4.ftcdn.net/jpg/06/68/58/61/360_F_668586164_V1Q1L8ChxDSVc9d0QbFZk1wfylNmV83p.jpg",
+    likes: 0
   },
   {
     id: "veg7",
@@ -56,6 +62,7 @@ const fallbackVegItems = [
     price: 169,
     desc: "Crispy veg balls in tangy sauce",
     img: "https://img.freepik.com/premium-photo/veg-chicken-manchurian-with-gravy_729149-107829.jpg",
+    likes: 0
   },
   {
     id: "veg8",
@@ -63,6 +70,7 @@ const fallbackVegItems = [
     price: 179,
     desc: "Mushrooms in rich onion‑tomato gravy",
     img: "https://www.palatesdesire.com/wp-content/uploads/2020/03/Mushroom_masala-1536x1025.jpg",
+    likes: 0
   },
   {
     id: "veg9",
@@ -70,6 +78,7 @@ const fallbackVegItems = [
     price: 159,
     desc: "Slow‑cooked black lentils, buttery",
     img: "https://wallpaperaccess.com/full/10568916.jpg",
+    likes: 0
   },
   {
     id: "veg10",
@@ -77,6 +86,7 @@ const fallbackVegItems = [
     price: 169,
     desc: "Mixed veggies tossed with kadai spices",
     img: "https://cdn.tasteatlas.com/images/dishes/d24aa6fbf6024a2c94de28fadb965701.jpeg?mw=1300",
+    likes: 0
   },
   {
     id: "veg11",
@@ -84,6 +94,7 @@ const fallbackVegItems = [
     price: 199,
     desc: "Tandoor‑grilled paneer with spices",
     img: "https://tse2.mm.bing.net/th/id/OIP.-ndMbbnDa5vPzgLYrBbLMgHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    likes: 0
   },
   {
     id: "veg12",
@@ -91,6 +102,7 @@ const fallbackVegItems = [
     price: 139,
     desc: "Fragrant rice with veggies & spices",
     img: "https://kohinoor-joy.com/wp-content/uploads/2020/11/veg-pulao-1068x601.jpg",
+    likes: 0
   },
   {
     id: "veg13",
@@ -98,6 +110,7 @@ const fallbackVegItems = [
     price: 119,
     desc: "Comforting south‑Indian classic",
     img: "https://img.freepik.com/free-photo/sambar-rice-sambar-sadam-one-pot-meal-from-south-indian-state-tamil-nadu-kerala_466689-75208.jpg?size=626&ext=jpg",
+    likes: 0
   },
   {
     id: "veg14",
@@ -105,6 +118,7 @@ const fallbackVegItems = [
     price: 149,
     desc: "Crispy cauliflower fritters",
     img: "https://as1.ftcdn.net/v2/jpg/04/18/04/38/1000_F_418043809_e3jOBjYVMSllkE6AGxCnD9BRmxiBDuRi.jpg",
+    likes: 0
   },
   {
     id: "veg15",
@@ -112,6 +126,7 @@ const fallbackVegItems = [
     price: 189,
     desc: "Spinach gravy with paneer cubes",
     img: "https://img.freepik.com/premium-photo/palak-paneer-delight_729149-8270.jpg",
+    likes: 0
   },
 ];
 
@@ -123,36 +138,57 @@ export default function Veg() {
   const navigate = useNavigate();
 
   // Load items and likes from localStorage
+  // useEffect(() => {
+  //   let alive = true;
+  //   (async () => {
+  //     try {
+  //       const { data } = await axios.get(`${BASE_URL}/menu/veg.json`);
+  //       if (!alive) return;
+  //       let arr = data ? (Array.isArray(data) ? data : Object.values(data)) : fallbackVegItems;
+  //       // Load likes from localStorage
+  //       const savedLikes = JSON.parse(localStorage.getItem("vegLikes") || "{}");
+  //       arr = arr.map(item => ({
+  //         ...item,
+  //         likes: savedLikes[item.id] || 0,
+  //       }));
+  //       setItems(arr);
+  //     } catch (e) {
+  //       console.error("Veg fetch error:", e);
+  //       const savedLikes = JSON.parse(localStorage.getItem("vegLikes") || "{}");
+  //       const arr = fallbackVegItems.map(item => ({
+  //         ...item,
+  //         likes: savedLikes[item.id] || 0,
+  //       }));
+  //       setItems(arr);
+  //     } finally {
+  //       if (alive) setLoading(false);
+  //     }
+  //   })();
+  //   return () => {
+  //     alive = false;
+  //   };
+  // }, []);
   useEffect(() => {
-    let alive = true;
-    (async () => {
-      try {
-        const { data } = await axios.get(`${BASE_URL}/menu/veg.json`);
-        if (!alive) return;
-        let arr = data ? (Array.isArray(data) ? data : Object.values(data)) : fallbackVegItems;
-        // Load likes from localStorage
-        const savedLikes = JSON.parse(localStorage.getItem("vegLikes") || "{}");
-        arr = arr.map(item => ({
-          ...item,
-          likes: savedLikes[item.id] || 0,
-        }));
-        setItems(arr);
-      } catch (e) {
-        console.error("Veg fetch error:", e);
-        const savedLikes = JSON.parse(localStorage.getItem("vegLikes") || "{}");
-        const arr = fallbackVegItems.map(item => ({
-          ...item,
-          likes: savedLikes[item.id] || 0,
-        }));
-        setItems(arr);
-      } finally {
-        if (alive) setLoading(false);
-      }
-    })();
-    return () => {
-      alive = false;
-    };
-  }, []);
+  let alive = true;
+  (async () => {
+    try {
+      const { data } = await axios.get(`${BASE_URL}/menu/veg.json`);
+      if (!alive) return;
+      const arr = data ? Object.values(data) : fallbackVegItems.map(i => ({ ...i, likes: 0 }));
+      setItems(arr);
+    } catch (e) {
+      console.error("Veg fetch error:", e);
+      const arr = fallbackVegItems.map(i => ({ ...i, likes: 0 }));
+      setItems(arr);
+    } finally {
+      if (alive) setLoading(false);
+    }
+  })();
+  return () => {
+    alive = false;
+  };
+}, []);
+
 
   // ✅ Add to cart with qty support
   const addToCart = (item) => {
@@ -172,22 +208,28 @@ export default function Veg() {
     // navigate("/checkout");
   };
 
+  
   // ✅ Handle likes
-  const handleLike = (itemId) => {
-    const updatedItems = items.map(item => {
-      if (item.id === itemId) {
-        const newLikes = item.likes + 1;
-        return { ...item, likes: newLikes };
-      }
-      return item;
-    });
-    setItems(updatedItems);
+const handleLike = async (itemId) => {
+  const updatedItems = items.map(item => {
+    if (item.id === itemId) {
+      const newLikes = item.likes + 1;
+      return { ...item, likes: newLikes };
+    }
+    return item;
+  });
+  setItems(updatedItems);
 
-    // Save likes in localStorage
-    const savedLikes = JSON.parse(localStorage.getItem("vegLikes") || "{}");
-    savedLikes[itemId] = (savedLikes[itemId] || 0) + 1;
-    localStorage.setItem("vegLikes", JSON.stringify(savedLikes));
-  };
+  // Save likes in Firebase
+  try {
+    await axios.patch(`${BASE_URL}/menu/veg/${itemId}.json`, {
+      likes: updatedItems.find(i => i.id === itemId).likes
+    });
+  } catch (err) {
+    console.error("Failed to update likes:", err);
+  }
+};
+
 
   if (loading) {
     return (

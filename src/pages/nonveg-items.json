@@ -1,0 +1,135 @@
+{    
+    "non1": { 
+        "id": "non1",
+        "name": "Chicken Biryani", 
+        "price": 249, 
+        "desc": "Aromatic rice with tender chicken pieces", 
+        "img": "https://img.freepik.com/premium-photo/indian-chicken-biryani-bowl_1045959-2177.jpg", 
+        "likes": 0 
+    },
+
+    "non2":{ 
+        "id": "non2", 
+        "name": "Butter Chicken", 
+        "price": 279, 
+        "desc": "Creamy tomato gravy with juicy chicken", 
+        "img": "https://img.freepik.com/premium-photo/compilation-mouthwatering-butter-chicken-images-stock-photo-portfolio_198067-493824.jpg", 
+        "likes": 0 
+    },
+
+    "non3":{ 
+        "id": "non3", 
+        "name": "Mutton Curry", 
+        "price": 299, 
+        "desc": "Slow-cooked mutton in spicy curry", 
+        "img": "https://im.whatshot.in/img/2022/Apr/prchi-palwe-3omlwzkkt0y-unsplash-cropped-1-1649339020-1649402982.jpg", 
+        "likes": 0 
+    },
+
+    "non4":{ 
+        "id": "non4", 
+        "name": "Fish Fry", 
+        "price": 229, 
+        "desc": "Crispy fried fish with masala coating", 
+        "img": "https://as1.ftcdn.net/v2/jpg/04/64/44/30/1000_F_464443092_bG4XIDtAyJwLk3HQeoK096on3BuTFIWW.jpg", 
+        "likes": 0 
+    },
+
+    "non5":{ 
+        "id": "non5", 
+        "name": "Prawn Masala", 
+        "price": 269, "desc": "Juicy prawns in spicy onion-tomato masala", 
+        "img": "https://img.freepik.com/premium-photo/plate-prawns-with-red-sauce-chilies-black-background_398492-4378.jpg", 
+        "likes": 0 
+    },
+
+    "non6":{ 
+        "id": "non6", 
+        "name": "Chicken 65", 
+        "price": 199, 
+        "desc": "Spicy deep-fried chicken starter", 
+        "img": "https://static.toiimg.com/photo/msid-60425532/60425532.cms", 
+        "likes": 0 
+    },
+
+    "non7":{ 
+        "id": "non7", 
+        "name": "Grilled Chicken", 
+        "price": 259, 
+        "desc": "Tandoor-grilled chicken with spices", 
+        "img": "https://img.freepik.com/premium-photo/grilled-chicken-wings-barbecue-grill-with-flames-smokegenerative-ai_221128-10158.jpg", 
+        "likes": 0 
+    },
+
+    "non8":{ 
+        "id": "non8", 
+        "name": "Egg Curry", 
+        "price": 149, 
+        "desc": "Boiled eggs in spicy curry gravy", 
+        "img": "https://lifestyletoppings.com/wp-content/uploads/2023/04/Egg-Curry.jpg", 
+        "likes": 0 
+    },
+
+    "non9":{ 
+        "id": "non9", 
+        "name": "Chicken Shawarma", 
+        "price": 179, 
+        "desc": "Middle Eastern-style chicken wrap", 
+        "img": "https://housing.com/news/wp-content/uploads/2023/12/Best-places-for-shawarma-in-Hyderabad-f.jpg", 
+        "likes": 0 
+    },
+
+    "non10":{ 
+        "id": "non10", 
+        "name": "Fish Curry", 
+        "price": 239, 
+        "desc": "Tangy fish curry with spices", 
+        "img": "https://tse1.mm.bing.net/th/id/OIP.eQeca1oWmN4P9d7zTFctKwHaE8?r=0&w=1024&h=683&rs=1&pid=ImgDetMain&o=7&rm=3", 
+        "likes": 0 
+    },
+
+    "non11":{ 
+        "id": "non11", 
+        "name": "Chicken Kebab", 
+        "price": 219, 
+        "desc": "Succulent chicken skewers grilled", 
+        "img": "https://img.pikbest.com/wp/202343/delicious-chicken-shashlik-on-a-textured-gray-background-mouthwatering-culinary-concept_9981462.jpg!bw700", 
+        "likes": 0 
+    },
+  
+    "non12":{ 
+        "id": "non12", 
+        "name": "Crab Masala", 
+        "price": 289, 
+        "desc": "Spicy crab cooked in masala", 
+        "img": "https://chefdeenaskitchen.com/wp-content/uploads/2024/01/A7300343-1024x577.jpg", 
+        "likes": 0 
+    },
+  
+    "non13":{ 
+        "id": "non13", 
+        "name": "Chicken Fried Rice", 
+        "price": 169, 
+        "desc": "Chinese-style rice with chicken", 
+        "img": "https://static.vecteezy.com/system/resources/thumbnails/026/604/888/small_2x/nasi-goreng-indonesian-traditional-food-fried-rice-chicken-with-eggs-and-spicy-spices-by-frying-concept-by-ai-generated-free-photo.jpg", 
+        "likes": 0 
+    },
+  
+    "non14":{ 
+        "id": "non14", 
+        "name": "Mutton Biryani", 
+        "price": 289, 
+        "desc": "Flavorful biryani with mutton", 
+        "img": "https://img.freepik.com/premium-photo/mutton-biryani-with-biryani-masala-side_1169880-92382.jpg", 
+        "likes": 0 
+    },
+  
+    "non15":{ 
+        "id": "non15", 
+        "name": "Tandoori Chicken", 
+        "price": 259, 
+        "desc": "Classic tandoor-roasted chicken", 
+        "img": "https://img.freepik.com/premium-photo/sensory-delight-tandoori-chicken-s-smoky-essence-clay_818261-17963.jpg", 
+        "likes": 0 
+    }
+}

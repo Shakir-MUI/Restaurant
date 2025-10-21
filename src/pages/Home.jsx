@@ -70,7 +70,7 @@ export default function Home() {
 
             {/* WhatsApp */}
             <a
-              href="https://api.whatsapp.com/send?phone=919952876617&text=Hello%20Foodies%20Restaurant!"
+              href="https://api.whatsapp.com/send?phone=919952876617&text=Hello%20The%20Golden%20Bite%20Restaurant!"
               target="_blank"
               rel="noreferrer"
               style={{ textDecoration: "none" }}
@@ -87,7 +87,7 @@ export default function Home() {
             <p className="mb-1">thegoldenbite07@gmail.com</p>
             <p className="mb-0">WhatsApp: +91 99528 76617</p>
           </div>
-          <p className="mt-4 mb-0">&copy; {new Date().getFullYear()} Foodies Restaurant. All rights reserved.</p>
+          <p className="mt-4 mb-0">&copy; {new Date().getFullYear()} The Golden Bite Restaurant. All rights reserved.</p>
         </footer>
       </div>
     </div>

@@ -122,27 +122,34 @@ export default function Juice() {
 
   // ✅ Load items from Firebase
   useEffect(() => {
-    let alive = true;
-    (async () => {
-      try {
-        const { data } = await axios.get(`${BASE_URL}/menu/juice.json`);
-        if (!alive) return;
-        const arr = data
-          ? Object.values(data)
-          : fallbackJuiceItems.map((i) => ({ ...i, likes: 0 }));
-        setItems(arr);
-      } catch (e) {
-        console.error("Juice fetch error:", e);
-        const arr = fallbackJuiceItems.map((i) => ({ ...i, likes: 0 }));
-        setItems(arr);
-      } finally {
-        if (alive) setLoading(false);
-      }
-    })();
-    return () => {
-      alive = false;
-    };
-  }, []);
+  let alive = true;
+  (async () => {
+    try {
+      const { data } = await axios.get(`${BASE_URL}/menu/juice.json`);
+      if (!alive) return;
+
+      const arr = data
+        ? Object.values(data).map((item) => ({
+            ...item,
+            description: item.desc,
+            image: item.img,
+          }))
+        : fallbackJuiceItems.map((i) => ({ ...i, likes: 0 }));
+
+      setItems(arr);
+    } catch (e) {
+      console.error("Juice fetch error:", e);
+      const arr = fallbackJuiceItems.map((i) => ({ ...i, likes: 0 }));
+      setItems(arr);
+    } finally {
+      if (alive) setLoading(false);
+    }
+  })();
+  return () => {
+    alive = false;
+  };
+}, []);
+
 
   // ✅ Add to Cart
   const addToCart = (item) => {
